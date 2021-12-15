@@ -8,6 +8,15 @@
 html, body, #root{
   background-color: #efefef; 
   height: 100%;
+  color: black;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 .App{

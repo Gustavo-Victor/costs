@@ -1,8 +1,8 @@
 function NewProject(){
     return (
         <div>
-            <h1>Projetos</h1>
-            <p>Conteúdo de projetos... </p>
+            <h1>Novo projeto</h1>
+            <p>Formulário para adicionar projeto... </p>
         </div>
     );
 };
