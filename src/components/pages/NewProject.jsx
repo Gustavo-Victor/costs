@@ -1,8 +1,12 @@
+import styles from './NewProject.module.css';
+import ProjectForm from '../project/ProjectForm';
+
 function NewProject(){
     return (
-        <div>
-            <h1>Novo projeto</h1>
-            <p>Formulário para adicionar projeto... </p>
+        <div className={styles.newProjectContainer}>
+            <h1>Criar projeto</h1>
+            <p>Crie seu projeto para depois adicionar os serviços... </p>
+            <ProjectForm />
         </div>
     );
 };
