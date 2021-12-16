@@ -4,8 +4,9 @@ import Input from '../form/Input';
 import Select from '../form/Select';
 import SubmitButton from '../form/SubmitButton';
 
-function ProjectForm({btnText}){
+function ProjectForm({btnText, handleSubmit, projectData}){
     const [categories, setCategories] = useState([]);
+    const [project, setProject] = useState(projectData || {});
     
     useEffect(() => {
         fetch('http://localhost:5000/categories', {
@@ -19,13 +20,31 @@ function ProjectForm({btnText}){
         catch((err) => console.log(err));
     }, []); 
 
+    const submit = (e) => {
+        e.preventDefault();
+        console.log(project);
+        handleSubmit(project);
+    }
+
+    const handleChange = (e) => {
+        setProject({...project, [e.target.name]:e.target.value});
+    }
+
+    const handleCategory = (e) => {
+        setProject({...project, category: {
+            id: e.target.value,
+            name: e.target.options[e.target.selectedIndex].text
+        }});
+    }
+
+
     return (
-        <form className={styles.form}>            
-            <Input type='text' name='name' id='name' placeholder='Digite o nome do projeto...' text='Projeto'  />
+        <form method='POST' id='mainForm' className={styles.form} onSubmit={submit}>            
+            <Input type='text' name='name' id='name' placeholder='Digite o nome do projeto...' text='Projeto' value={project.name? project.name : ''} handleOnChange={handleChange} />
 
-            <Input type='number' name='budget' id='budget' placeholder='Digite o orçamento do projeto...' text='Orçamento'  />
+            <Input type='number' name='budget' id='budget' placeholder='Digite o orçamento do projeto...' text='Orçamento' value={project.budget? project.budget : ''} handleOnChange={handleChange}  />
 
-            <Select text='Categoria' id='category_id' name='category_id' options={categories} />
+            <Select text='Categoria' value={project.category ? project.category.id : ''} id='category_id' handleOnChange={handleCategory} name='category_id' options={categories} />
             <SubmitButton id='submit' name='submit' text={btnText} />
         </form>
     );
