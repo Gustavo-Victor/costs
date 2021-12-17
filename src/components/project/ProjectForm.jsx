@@ -22,7 +22,6 @@ function ProjectForm({btnText, handleSubmit, projectData}){
 
     const submit = (e) => {
         e.preventDefault();
-        console.log(project);
         handleSubmit(project);
     }
 
@@ -45,6 +44,7 @@ function ProjectForm({btnText, handleSubmit, projectData}){
             <Input type='number' name='budget' id='budget' placeholder='Digite o orçamento do projeto...' text='Orçamento' value={project.budget? project.budget : ''} handleOnChange={handleChange}  />
 
             <Select text='Categoria' value={project.category ? project.category.id : ''} id='category_id' handleOnChange={handleCategory} name='category_id' options={categories} />
+
             <SubmitButton id='submit' name='submit' text={btnText} />
         </form>
     );
