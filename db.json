@@ -1,62 +1,29 @@
 {
   "projects": [
     {
-      "name": "projeto teste",
-      "budget": "5000",
-      "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "App",
-      "budget": "10000",
-      "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "Colocar cabeamento",
-      "budget": "30500",
-      "category": {
-        "id": "2",
-        "name": "Infraestrutura"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "name": "Projeto design teste",
-      "budget": "4000",
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "name": "Projeto planejamento teste",
-      "budget": "5600",
+      "name": "Projeto de planejamento",
+      "budget": "2000",
       "category": {
         "id": "4",
         "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
-      "id": 5
+      "id": 3
     },
     {
-      "name": "Projeto Infra Teste 2",
+      "name": "Projeto dev",
+      "budget": "3000",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "projeto infra",
       "budget": "4000",
       "category": {
         "id": "2",
@@ -64,51 +31,7 @@
       },
       "cost": 0,
       "services": [],
-      "id": 6
-    },
-    {
-      "name": "projeto dev ",
-      "budget": "3000",
-      "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
-    },
-    {
-      "name": "projeto infra",
-      "budget": "3000",
-      "category": {
-        "id": "2",
-        "name": "Infraestrutura"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 8
-    },
-    {
-      "category": {
-        "id": "2",
-        "name": "Infraestrutura"
-      },
-      "name": "projetinho infra",
-      "budget": "100",
-      "cost": 0,
-      "services": [],
-      "id": 9
-    },
-    {
-      "name": "fdsafdas",
-      "budget": "100",
-      "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 10
+      "id": 5
     }
   ],
   "categories": [
