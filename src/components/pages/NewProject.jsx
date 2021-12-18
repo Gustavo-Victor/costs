@@ -11,6 +11,13 @@ function NewProject(){
         project.cost = 0;
         project.services = [];
 
+        //corrigindo bug 
+        if(!'category' in project){
+            project.category = {};
+            project.category.id = 1;
+            project.category.name = 'Desenvolvimento'
+        }
+
         fetch('http://localhost:5000/projects', {
             method: "POST",
             headers: {
@@ -31,7 +38,7 @@ function NewProject(){
         <div className={styles.newProjectContainer}>
             <h1>Criar projeto</h1>
             <p>Crie seu projeto para depois adicionar os serviços... </p>
-            <ProjectForm handleSubmit={createPost} btnText='Criar projeto' />
+            <ProjectForm handleSubmit={createPost} btnText='Criar projeto' projectData={{}} />
         </div>
     );
 };

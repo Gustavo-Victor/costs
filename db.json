@@ -1,18 +1,40 @@
 {
   "projects": [
     {
-      "name": "Projeto de planejamento",
-      "budget": "2000",
+      "name": "projeto infra",
+      "budget": "3000",
+      "category": {
+        "id": "2",
+        "name": "Infraestrutura"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "Planejamento teste",
+      "budget": "5000",
       "category": {
         "id": "4",
         "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
+      "id": 2
+    },
+    {
+      "name": "projeto dev ",
+      "budget": "4500",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
       "id": 3
     },
     {
-      "name": "Projeto dev",
+      "name": "projeto dev 2",
       "budget": "3000",
       "category": {
         "id": "1",
@@ -23,15 +45,48 @@
       "id": 4
     },
     {
-      "name": "projeto infra",
+      "name": "projeto dev 3",
       "budget": "4000",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "name": "projeto infra teste ",
+      "budget": "3000",
       "category": {
         "id": "2",
         "name": "Infraestrutura"
       },
       "cost": 0,
       "services": [],
-      "id": 5
+      "id": 6
+    },
+    {
+      "name": "projeo design 1",
+      "budget": "1200",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 7
+    },
+    {
+      "name": "projeto design 2",
+      "budget": "3200",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 8
     }
   ],
   "categories": [

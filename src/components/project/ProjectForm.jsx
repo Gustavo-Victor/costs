@@ -21,8 +21,8 @@ function ProjectForm({btnText, handleSubmit, projectData}){
     }, []); 
 
     const submit = (e) => {
-        e.preventDefault();
         handleSubmit(project);
+        e.preventDefault();
     }
 
     const handleChange = (e) => {
