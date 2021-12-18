@@ -1,5 +1,69 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "projeto dev teste ",
+      "budget": "3000",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 1550,
+      "services": [
+        {
+          "service": "serviço teste",
+          "cost": "300",
+          "description": "Um serviço apenas para teste",
+          "id": "7a8f21bb-14e2-4d57-a813-f9a918e407d2"
+        },
+        {
+          "service": "serviço teste 2",
+          "cost": "500",
+          "description": "Alguma descrição...",
+          "id": "0c833316-de56-4227-9c86-9b537e45ba8a"
+        },
+        {
+          "service": "Serviço 3",
+          "description": "Mais um serviço teste muito importante para xyz...",
+          "cost": "750",
+          "id": "f63c75c1-0856-4b26-b06b-e7379a75d22b"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "category": {
+        "id": "2",
+        "name": "Infraestrutura"
+      },
+      "name": "projeto infra",
+      "budget": "4000",
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "projeto planejamento",
+      "budget": "2000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "projeto design",
+      "budget": "2000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    }
+  ],
   "categories": [
     {
       "id": 1,

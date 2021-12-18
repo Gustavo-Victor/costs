@@ -1,5 +1,5 @@
 import styles from '../project/ProjectCard.module.css';
-import {BsPencil, BsFillTrashFill} from 'react-icons/bs';
+import {BsFillTrashFill} from 'react-icons/bs';
 
 function ServiceCard({id, name, cost, description, handleRemove}){
 
@@ -15,7 +15,7 @@ function ServiceCard({id, name, cost, description, handleRemove}){
             <p>{description}</p>
             <div className={styles.project_card_actions}>
                 <button onClick={remove}>
-                    <BsFillTrashFill />Excluir
+                    <BsFillTrashFill /><span>Excluir</span>
                 </button>
             </div>
         </div>

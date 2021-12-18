@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import styles from './Message.module.css';
 
-function Message({type, text}){
+function Message({type, text, top}){
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
@@ -18,7 +18,7 @@ function Message({type, text}){
     return (
         <>
             {visible && (
-                <div className={`${styles.message} ${styles[type]}`}>{text}</div>
+                <div style={{marginTop: top}} className={`${styles.message} ${styles[type]}`}>{text}</div>
             )}
         </>
     );

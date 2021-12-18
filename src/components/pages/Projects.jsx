@@ -14,11 +14,9 @@ function Projects(){
     const [projectMessage, setProjectMessage] = useState('');
 
     const location = useLocation();
-    let mes = '';
-    if(location.state){
-        mes = location.state.message;
+    if (location.state) {
+        setProjectMessage(location.state.message);
     }
-    console.log(mes);
 
     useEffect(()=> {
         const timer = setTimeout(() => {
@@ -65,9 +63,8 @@ function Projects(){
                 <h1>Meus projetos</h1>
                 <LinkButton to='/newproject' text='Criar projeto'/>
             </div>            
-            {mes && (<Message type='success' text={mes} />)}
             {projectMessage && (<Message type='success' text={projectMessage}/>)}
-            <Container customClass='start'>
+            <Container customClass='start' >
                 {projects.length > 0 && (
                     projects.map((project) => (
                         <ProjectCard handleRemove={removeProject} key={project.id} id={project.id} name={project.name} budget={project.budget} category={project.category.name} />
