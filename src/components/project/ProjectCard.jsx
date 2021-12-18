@@ -1,37 +1,33 @@
+import { Link } from 'react-router-dom';
 import styles from './ProjectCard.module.css';
-import {BsPencil, BsFillTrashFill} from 'react-icons/bs';
-import {Link} from 'react-router-dom';
+import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
 
-function ProjectCard({id, name, budget, category, handleRemove}){
+function ProjectCard({ id, name, budget, category, handleRemove }) {
+  const remove = (e) => {
+    e.preventDefault()
+    handleRemove(id)
+  }
 
-    function remove(event) {
-        event.preventDefault();
-        handleRemove(id);
-        console.log(id);
-    }
-
-    return (
-        <div className={styles.project_card} id={'Card' + id}>
-            <h4>{name}</h4>
-            <p><span>Orçamento: </span>R$ {budget}</p>
-            <p className={styles.category_text}>
-                <span className={styles[`${category.toLowerCase()}`]}></span>
-                {category}
-            </p>
-            <div className={styles.project_card_actions}>
-                <Link to={'/project/' + id}>
-                    <button>
-                        <BsPencil style={{color: 'green'}} /> Editar
-                    </button>
-                </Link>
-                <Link to='/'>
-                    <button onClick={remove}>
-                        <BsFillTrashFill style={{color: 'red'}}/> Excluir    
-                    </button>
-                </Link>
-            </div>
-        </div>
-    )
+  return (
+    <div className={styles.project_card}>
+      <h4>{name}</h4>
+      <p>
+        <span>Orçamento:</span> R${budget}
+      </p>
+      <p className={styles.category_text}>
+        <span className={`${styles[category.toLowerCase()]}`}></span> {category}
+      </p>
+      <div className={styles.project_card_actions}>
+        <Link to={'/project/' + id}>
+          <BsPencil /> Editar
+        </Link>
+        <button onClick={remove}>
+          <BsFillTrashFill />
+          Excluir
+        </button>
+      </div>
+    </div>
+  )
 }
 
-export default ProjectCard;
+export default ProjectCard
