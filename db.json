@@ -7,8 +7,21 @@
         "id": "2",
         "name": "Infraestrutura"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1355,
+      "services": [
+        {
+          "service": "parte 1 de infra",
+          "cost": "1000",
+          "description": "o primeiro serviço/parte do projeto",
+          "id": "840c5125-8eb2-43c6-bd97-d3fdb7e0734b"
+        },
+        {
+          "service": "parte 2 de infra",
+          "cost": "355",
+          "description": "o segundo serviço...",
+          "id": "a0e028eb-02eb-4c15-be59-850abfdd57f0"
+        }
+      ],
       "id": 1
     },
     {
