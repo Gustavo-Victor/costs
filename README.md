@@ -12,7 +12,7 @@
     <a href='#-about'>• About</a>
     <a href='#-screenshots'>• Screenshots</a>  
     <a href='#-functionalities'>• Functionalities</a>
-    <a href='#-how-to-use'>• Get Started</a>  
+    <a href='#-get-started'>• Get Started</a>  
     <a href='#-features'>• Features</a>  
     <a href='#-author'>• Author</a>  
     <a href='#-license'>• Licence</a>    
@@ -34,7 +34,7 @@ CRUD system in React and Json Server based on a React course from the ["Hora de 
 ![img](./src/img/screenshot7b.png)
 ![img](./src/img/screenshot4b.png)
 
-## Functionalities 
+## ⚙️ Functionalities 
 - [x] User can register, edit, list and remove projects
 - [x] User can register, list and delete services associated with each project
 
